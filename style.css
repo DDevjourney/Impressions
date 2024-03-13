@@ -12,24 +12,46 @@
     align-self: flex-end; 
     font-size:xx-large;
     text-transform: uppercase;
-    padding-top: 20px;
+    margin-top: 10px;
     color: aliceblue;
+    margin-bottom: 10px;
 }
+
+.home span {
+    padding-right: 10px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+a:hover {
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+
+a:visited {
+    color: aliceblue;
+    position: absolute;
+   
+}
+
  /* ++++++++++++++++++++++++++++++++ */
 .links {
+    display: block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: auto; 
     text-transform: uppercase;
     font-size: x-large;
-    padding-top: 2px;
     color: aliceblue;
-    border: solid  #F4AC2B 1px;
+    border: solid gray 1px;
+    margin-top: 15px;
+    padding: 10px;
+    
 }
 
-a:hover {
-    background-color: #F4AC2B;
-
-}
  /* ++++++++++++++++++++++++++++++++ */
 .meaning {
     font-size: 100px;

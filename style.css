@@ -1,91 +1,400 @@
-.name {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    align-self: flex-start;
-    font-size:xx-large;
-    text-transform: uppercase;
-    padding-top: 20px;
-    color: aliceblue;
-}
+ /* +Nav things */
 
-.country {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    align-self: flex-end; 
-    font-size:xx-large;
-    text-transform: uppercase;
-    margin-top: 10px;
-    color: aliceblue;
-    margin-bottom: 10px;
-}
+ nav {
+     display: flex;
+     justify-content: space-between;
+ }
 
-.home span {
-    padding-right: 10px;
-}
-a {
-    display: inline-block;
-    text-decoration: none;
-    padding-right: 10px;
-    padding-left: 5px;
-}
+ .name {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     align-self: flex-start;
+     font-size: xx-large;
+     text-transform: uppercase;
+     padding-top: 20px;
+     color: aliceblue;
+     margin-left: 90px;
+ }
 
-a:hover {
-    background-color: gray;
-    transition: background-color 0.3s ease;
-}
+ .country {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     align-self: flex-end;
+     font-size: xx-large;
+     text-transform: uppercase;
+     top: 29px;
+     left: 1000px;
+     color: aliceblue;
+     margin-bottom: 10px;
+     margin-left: 400px;
+     position: fixed;
 
-a:visited {
-    color: aliceblue;
-    position: absolute;
-   
-}
+ }
+
+ .home span {
+     padding-right: 10px;
+ }
+
+ a {
+     display: inline-block;
+     text-decoration: none;
+     padding-right: 10px;
+     padding-left: 5px;
+ }
+
+ a:hover {
+     background-color: gray;
+     transition: background-color 0.3s ease;
+ }
+
+ a:visited {
+     color: aliceblue;
+     position: absolute;
+
+ }
 
  /* ++++++++++++++++++++++++++++++++ */
-.links {
-    display: block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: auto; 
-    text-transform: uppercase;
-    font-size: x-large;
-    color: aliceblue;
-    border: solid gray 1px;
-    margin-top: 15px;
-    padding: 10px;
-    
-}
+ .links {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-transform: uppercase;
+     font-size: x-large;
+     color: aliceblue;
+     border: solid gray 1px;
+     margin-top: 20px;
+     padding: 10px;
+     right: 670px;
+     position: fixed;
+
+ }
+
+ .webd {
+     position: absolute;
+     top: 20%;
+     margin-left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .meaning {
+     font-size: 40px;
+ }
+
+ .builder {
+     color: aliceblue;
+     font-size: x-large;
+     margin-left: 80px;
+     margin-right: 300px;
+ }
+
+
 
  /* ++++++++++++++++++++++++++++++++ */
-.meaning {
-    font-size: 100px;
+
+
+
+ h2 {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: #F4AC2B;
+ }
+
+ body {
+     background-color: #161616;
+ }
+
+ /* Meaning of a web dev */
+ .webdev {
+     width: 300px;
+     /* Adjust width as needed */
+     height: 400px;
+     /* Adjust height as needed */
+     perspective: 500px;
+     /* Perspective for 3D effect */
+     margin-top: 13%;
+     margin-left: 10%;
+     display: flex;
+     justify-content: center;
+     /* Center horizontally */
+     align-items: center;
+     /* Center vertically */
+ }
+
+ .webdev:hover .front1 {
+     transform: rotateY(-180deg);
+     /* Flip to reveal back side */
+ }
+
+ .webdev:hover .back1 {
+     transform: rotateY(0deg);
+     /* Flip to reveal back side */
+ }
+
+ .front1,
+ .back1 {
+     width: 90%;
+     height: 100%;
+     position: absolute;
+     backface-visibility: hidden;
+     /* Hide the back side initially */
+     transition: transform 0.8s;
+     /* Smooth transition effect */
+     text-align: center;
+     /* Center text horizontally */
+
+ }
+
+ .front1 {
+     background-color: #161616;
+     /* Front side color */
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 40px;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid aliceblue;
+
+ }
+
+ .insidefront1 {
+     padding-top: 38%;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 40px;
+     color: aliceblue;
+ }
+
+ .back1 {
+     background-color: aliceblue;
+     /* Back side color */
+     transform: rotateY(180deg);
+     /* Initial flip to hide back side */
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .insideback1 {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 20px;
+     padding-top: 15%;
+     padding-left: 5%;
+     padding-right: 5%;
+ }
+
+ /* Academic */
+
+ .academic {
+     width: 300px;
+     /* Adjust width as needed */
+     height: 400px;
+     /* Adjust height as needed */
+     perspective: 500px;
+     /* Perspective for 3D effect */
+     margin-top: -23.3%;
+     margin-left: 30%;
+     display: flex;
+     justify-content: center;
+     /* Center horizontally */
+     align-items: center;
+     /* Center vertically */
+ }
+
+ .academic:hover .front2 {
+     transform: rotateY(-180deg);
+     /* Flip to reveal back side */
+ }
+
+ .academic:hover .back2 {
+     transform: rotateY(0deg);
+     /* Flip to reveal back side */
+ }
+
+ .front2, .back2 {
+     width: 90%;
+     height: 100%;
+     position: absolute;
+     backface-visibility: hidden;
+     /* Hide the back side initially */
+     transition: transform 0.8s;
+     /* Smooth transition effect */
+     text-align: center;
+     /* Center text horizontally */
+
+ }
+
+ .front2 {
+     background-color: #161616;
+     /* Front side color */
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 40px;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid aliceblue;
+
+ }
+
+ .insidefront2 {
+     padding-top: 38%;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 40px;
+     color: aliceblue;
+ }
+
+ .back2 {
+     background-color: aliceblue;
+     /* Back side color */
+     transform: rotateY(180deg);
+     /* Initial flip to hide back side */
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .insideback2 {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 20px;
+     padding-top: 15%;
+     padding-left: 5%;
+     padding-right: 5%;
+ }
+
+  /* Profesional */
+
+  .profesional {
+    width: 300px;
+    /* Adjust width as needed */
+    height: 400px;
+    /* Adjust height as needed */
+    perspective: 500px;
+    /* Perspective for 3D effect */
+    margin-top: -23.3%;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
 }
 
-.builder {
-    color: aliceblue;
-    font-size: x-large;
+.profesional:hover .front3 {
+    transform: rotateY(-180deg);
+    /* Flip to reveal back side */
 }
 
-.webd {
+.profesional:hover .back3 {
+    transform: rotateY(0deg);
+    /* Flip to reveal back side */
+}
+
+.front3, .back3 {
+    width: 90%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    /* Hide the back side initially */
+    transition: transform 0.8s;
+    /* Smooth transition effect */
+    text-align: center;
+    /* Center text horizontally */
+
 }
 
-  /* ++++++++++++++++++++++++++++++++ */
-
-nav {
-    display: flex; 
-    justify-content: space-between;
-}
-
-h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #F4AC2B;
-}
-
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body {
+.front3 {
     background-color: #161616;
+    /* Front side color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aliceblue;
+
 }
 
+.insidefront3 {
+    padding-top: 38%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.back3 {
+    background-color: aliceblue;
+    /* Back side color */
+    transform: rotateY(180deg);
+    /* Initial flip to hide back side */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.insideback3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+ /* Personal */
+
+ .personal {
+    width: 300px;
+    /* Adjust width as needed */
+    height: 400px;
+    /* Adjust height as needed */
+    perspective: 500px;
+    /* Perspective for 3D effect */
+    margin-top: -23.3%;
+    margin-left: 70%;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.personal:hover .front4 {
+    transform: rotateY(-180deg);
+    /* Flip to reveal back side */
+}
+
+.personal:hover .back4 {
+    transform: rotateY(0deg);
+    /* Flip to reveal back side */
+}
+
+.front4, .back4 {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    /* Hide the back side initially */
+    transition: transform 0.8s;
+    /* Smooth transition effect */
+    text-align: center;
+    /* Center text horizontally */
+
+}
+
+.front4 {
+    background-color: #161616;
+    /* Front side color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aliceblue;
+
+}
+
+.insidefront4 {
+    padding-top: 38%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.back4 {
+    background-color: aliceblue;
+    /* Back side color */
+    transform: rotateY(180deg);
+    /* Initial flip to hide back side */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.insideback4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

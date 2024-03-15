@@ -2,17 +2,18 @@
 
  nav {
      display: flex;
-     justify-content: space-between;
+     border: solid gray 1px;
  }
 
  .name {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     align-self: flex-start;
      font-size: xx-large;
      text-transform: uppercase;
-     padding-top: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
      color: aliceblue;
      margin-left: 90px;
+     align-items: center;
  }
 
  .country {
@@ -36,13 +37,14 @@
  a {
      display: inline-block;
      text-decoration: none;
-     padding-right: 10px;
-     padding-left: 5px;
+     padding: 5px 5px 5px;
+     margin-right: 10px;
  }
 
  a:hover {
-     background-color: gray;
-     transition: background-color 0.3s ease;
+    border-color: #ffcc00; /* Change border color on hover */
+    box-shadow: 0 0 10px 2px #ffcc00; /* Add a box shadow on hover */
+    transition: border-color 0.3s ease;
  }
 
  a:visited {
@@ -51,16 +53,20 @@
 
  }
 
+.homeicon, .workicon, .abouticon {
+    height: 35px;
+    display: inline-block;
+
+}
+
  /* ++++++++++++++++++++++++++++++++ */
  .links {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      text-transform: uppercase;
      font-size: x-large;
      color: aliceblue;
-     border: solid gray 1px;
-     margin-top: 20px;
-     padding: 10px;
-     right: 670px;
+     margin-top: 15px;
+     right: 750px;
      position: fixed;
 
  }
@@ -70,6 +76,7 @@
      top: 20%;
      margin-left: 50%;
      transform: translate(-50%, -50%);
+     border: solid gray 1px;
  }
 
  .meaning {
